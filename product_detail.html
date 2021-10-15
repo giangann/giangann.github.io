@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm | CLEAR ALGRICULTURE</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/store.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="header--container">
+        <div class="header icon-close" onclick="close_nav()">
+          <img src="img/close.png" alt="" />
+        </div>
+        <div class="header--menu" onclick="open_nav()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="header--logo">
+          <a href="index.html"><img src="img/logo3.png" alt="" /></a>
+        </div>
+        <div class="menu-wrapper-web">
+          <div class="menu-block">
+            <ul>
+              <li><a href="index.html">TRANG CHỦ</a></li>
+              <li><a href="">GIỚI THIỆU</a></li>
+              <li><a href="store.html" style="color: #37c105">SẢN PHẨM</a></li>
+              <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header--icon">
+          <div class="search-open">
+            <div class="icon icon--search"><i class="fas fa-search"></i></div>
+          </div>
+          <div class="icon icon--shopping">
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+          <div class="icon icon--profile" onclick="open_log()">
+            <a><i class="fas fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main--container-firstBanner">
+        <img src="img/colorful-veggies-frame-with-copy-space.webp" alt="" />
+      </div>
+
+      <!-- 3 outer layer similar with Store page (store.css) -->
+      <section class="product--overlay">
+        <div class="container">
+          <div class="product--wrapper">
+            <!-- 3 part inside -->
+            <div class="product__detail-leftWrapper">
+              <div class="product__detail-leftContainer">
+                <div class="detail__mainPic-wrapper">
+                  <div class="detail__mainPic-item">
+                    <img
+                      src="./img/detail_mainpic_wrapFood.webp"
+                      alt=""
+                      class="detail__mainPic-large"
+                    />
+                  </div>
+                </div>
+                <div class="detail__sliderPic">
+                  <!-- chả biết cái div ngay dưới có tác dụng gì ? -->
+                  <div class="detail__sliderPic-outer">
+                    <div class="detail__sliderPic-itemBlock">
+                      <img src="./img/pineApple.webp" alt="" />
+                    </div>
+                    <div class="detail__sliderPic-itemBlock">
+                      <img src="./img/product_strawbery.webp" alt="" />
+                    </div>
+                    <div class="detail__sliderPic-itemBlock">
+                      <img src="./img/product_pear.webp" alt="" />
+                    </div>
+                    <div class="detail__sliderPic-itemBlock">
+                      <img src="./img/pineApple.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__detail-rightWrapper"></div>
+            <div class="product__detail-bottom"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer--top-container">
+        <div class="footer--overlay"></div>
+        <div class="block block-about">
+          <ul>
+            <div class="footer_logo">
+              <img src="img/logo3_withText.png" alt="" />
+            </div>
+            <p>
+              <strong style="font-size: large">
+                Công Ty Cổ Phần Nông Nghiệp Ứng Dụng <br />
+                Công Nghệ Cao CLEAR ALGRICULTURE
+              </strong>
+              <br /><br />
+              Địa chỉ: Tầng 10, Tòa nhà Viwaseen – Số 48 Tố Hữu, <br />
+              P. Trung Văn, Q. Nam Từ Liêm, Hà Nội, Việt Nam
+            </p>
+            <br />
+          </ul>
+          <div class="footer-icon">
+            <div class="icon icon-facebook">
+              <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="icon icon-insta">
+              <i class="fab fa-instagram-square"></i>
+            </div>
+            <div class="icon icon-twitter">
+              <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="icon icon-youtube">
+              <i class="fab fa-youtube-square"></i>
+            </div>
+          </div>
+        </div>
+        <div class="block block-content">
+          <ul>
+            <li>
+              <a href=""><span>CHỨNG CHỈ</span></a>
+            </li>
+            <li><a href="">VietGap</a></li>
+            <li><a href="">ISO</a></li>
+            <li><a href="">FSC</a></li>
+            <li><a href="">USDA</a></li>
+          </ul>
+        </div>
+        <div class="block block-Brands">
+          <ul>
+            <li>
+              <a href=""><span>GIỚI THIỆU</span></a>
+            </li>
+            <li><a href="">Dự án</a></li>
+            <li><a href="">Lĩnh vực</a></li>
+            <li><a href="">Công Nghệ</a></li>
+            <li><a href="">Đối tác</a></li>
+            <li><a href="">Truyền thông</a></li>
+            <li><a href="">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="block block-Career">
+          <a href=""><span>TƯ VẤN</span></a>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Họ và Tên" />
+          </div>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Điện thoại" />
+          </div>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Nội dung" />
+          </div>
+          <div class="button button--send-red">
+            <button>GỬI</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer--line"></div>
+      <div class="footer--bottom-container">
+        <div class="footer--title-copyright">
+          <h3>© 2017 Clear Algriculture Company. All rights reserved.</h3>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,240 @@
+/* css for main of store page */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap");
+/* css for outer layer */
+.product--overlay {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: white;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.product--wrapper {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+}
+
+/* css for Sidebar (left side) */
+.sidebar {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.sidebar__item {
+  margin-bottom: 35px;
+}
+
+/* css for Price_slider */
+input {
+  box-shadow: 0;
+  outline: 0;
+}
+.price-slider_block {
+  position: relative;
+  top: -15px;
+}
+.price-slider {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height: 4em;
+}
+.price-slider_value{
+  text-align: left;
+  position: relative;
+  top: 10px;
+  color: #dd2222;
+}
+.price-slider svg,
+.price-slider input[type="range"] {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+input[type="number"] {
+  border: none;
+  text-align: right;
+  font-size: 1em;
+  -moz-appearance: textfield;
+  font-weight: bold;
+  color: #dd2222;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]:invalid,
+input[type="number"]:out-of-range {
+  border: 2px solid #e60023;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #dd2222;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #dd2222;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #dd2222;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #dd2222;
+  border-radius: 1px;
+  box-shadow: none;
+  border: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 0px #000;
+  border: 1px solid #0e0d0d;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #dd2222;
+  border-radius: 1px;
+  box-shadow: none;
+  border: 0;
+}
+input[type="range"]::-moz-range-thumb {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 0px #000;
+  border: 1px solid #dd2222;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #a1d0ff;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower,
+input[type="range"]::-ms-fill-upper {
+  background: #dd2222;
+  border-radius: 1px;
+  box-shadow: none;
+  border: 0;
+}
+input[type="range"]::-ms-thumb {
+  z-index: 2;
+  position: relative;
+  box-shadow: 0px 0px 0px #000;
+  border: 1px solid #dd2222;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #dd2222;
+  cursor: pointer;
+}
+/*  */
+.sidebar__item-content {
+  position: relative;
+}
+.sidebar__item-content h4 {
+  margin-bottom: 35px;
+}
+.item__card {
+  margin-bottom: 20px;
+  display: block;
+  overflow: hidden;
+}
+
+.item__card-content {
+  padding-top: 10px;
+  overflow: hidden;
+}
+.item__card-picture {
+  float: left;
+  margin-right: 25px;
+}
+.item__card-content h6 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.item__card-content h5 {
+  font-size: 12px;
+  text-align: initial;
+  margin: 0;
+}
+
+/* css for Product side (right side) */
+.product {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.product__wrap-right {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.product__block {
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 33.3333333%;
+  max-width: 33.333333%;
+  position: relative;
+  width: 100%;
+}
+
+.product__card {
+  margin-bottom: 50px;
+}
+.overlay{
+  visibility: hidden;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.product__item__pic {
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.product__item__text {
+  text-align: center;
+  padding-top: 15px;
+}
