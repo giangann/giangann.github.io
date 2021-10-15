@@ -73,11 +73,13 @@ header {
 
 
 
-.fa-bars,.fa-search, .fa-shopping-cart,.fa-user{
+.fa-bars,.fa-search,.fa-shopping-cart,.fa-user{
   color: white;
   font-size: 18px;
   font-weight: 100;
 }
+
+
 
 .header--icon {
   display: flex;
