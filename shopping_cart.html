@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán | CLEAR ALGRICULTURE</title>
+    <link rel="icon" href="img/logo3.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/product_detail.css" />
+    <link rel="stylesheet" href="css/store.css" />
+    <link rel="stylesheet" href="css/product_detail.css" />
+    <link rel="stylesheet" href="./css/shopping_cart.css">
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="header--container">
+        <div class="header icon-close" onclick="close_nav()">
+          <img src="img/close.png" alt="" />
+        </div>
+        <div class="header--menu" onclick="open_nav()">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="header--logo">
+          <a href="index.html"><img src="img/logo3.png" alt="" /></a>
+        </div>
+        <div class="menu-wrapper-web">
+          <div class="menu-block">
+            <ul>
+              <li><a href="index.html">TRANG CHỦ</a></li>
+              <li><a href="">GIỚI THIỆU</a></li>
+              <li><a href="store.html">SẢN PHẨM</a></li>
+              <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header--icon">
+          <div class="search-open">
+            <div class="icon icon--search"><i class="fas fa-search"></i></div>
+          </div>
+          <div class="icon icon--shopping">
+            <a href="./shopping_cart.html"
+              ><i
+                style="color: #37c105 !important"
+                class="fas fa-shopping-cart"
+              ></i
+            ></a>
+          </div>
+          <div class="icon icon--profile" onclick="open_log()">
+            <a><i class="fas fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ------------------------ MAIN  --------------------------------------------- -->
+    <!-- ------------------------ MAIN  --------------------------------------------- -->
+
+    <main>
+      <div class="main--container-firstBanner">
+        <img src="img/colorful-veggies-frame-with-copy-space.webp" alt="" />
+      </div>
+
+      <section class="product--overlay">
+        <div class="container">
+          <div class="product--wrapper">
+            <!-- inside -->
+
+            <div class="shoping__cart__table-wrapper">
+              <div class="shoping__cart__table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="shoping__product">Products</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="shoping__cart__item">
+                        <img
+                          src="data:image/webp;base64,UklGRsAFAABXRUJQVlA4ILQFAADwGgCdASplAGQAPm0yk0ekIqGhKTpJYIANiUAa2wKqBeor4/yAdTUU2FLts/Mz0Yt543mjIqtpmIf2bnKYp7SPrzjQZF/EBN1cpqtBqvkJ1Bulv+3ZR4AWWsoLiizDbSox7BfwG1VwRpQjIeKW7qJfPlLLdnNdK8f8BxNaGE77sW/LVy/VA8b2VUWhhkS6vxUVEJtlPV/hoUkHrBsXzvReLbln32R4HyFfJVqWFm1gwNQthuge/gtJeRdiI3guciXqDCiLlnrUg/zd8boIalxq4i712Ctr26Mex5rrpCqAAAD+/7atRYAL94kaBPw7c+IBQdw8NXJhgBO4bFJv+joVe/vi3xNUdwTsa80yaDkuZ2cT2B7EHz3zrWk/Q8h4cGKB+tTM3e+HUHEH+Y8SCzqGxk1Um/VKJYQDNn7hfnCX3bTz6orXcdxGxEgFfN1Ur/8kRroNM2jwsNxOHLmzX6wByd/SOY6GT/bT/MloOvy6KweQQwQm5C28Kavzgyqffa2KQWZo9UtNwg/vb7PkP7yKU9I36bHlOPc3lWRur1RALsl5Te9gBj2AuCt83ATpvIUF2kSa2NXrzVAJU76immVd6sr7fTZ1RGK4EEHv/yfhXSPLq18DkO4lXOzADs1cZf2+PQ97pUHicuG+PWOXuj2VMRbj/ksPsMMUgWWDMMfVzdyWOIcXpiU5qcHMQyuOWZRFCbM1jkHTCJa9X8qVG/57VTiy+0z8FmeLwr8EAyXEnxmq6sai4k+GFdCLvyFEpN3Yr14Wl0215jM/JtPtvFSODNTOdUDMfDAZIIMEc6Zy/7pXnlAfAQIJToqixRpvuF8MmyvYVZpcHrdfDfT+RHvbs9uXb4G/Jplk7m0mZHFX+ELmr0q6doDWigTk4BeyxnjByvNejl2g56LD9TNosfT0FbZgalzUcLUhhTprf6kwc9r403YxlVVgpjbxfYzEkCCZ2vexZlaBe6bweknREZsXGjgHUYe+lPZwlNmxC37gKcM2ucZk1atZu+ZDHQ+xgkArt+seyTiwE3WsxpSzDksp+ogfhtTsyrTsJrWy2GZE/PD21l3MMiIedRSMtElqDrW47Mb3r70C3vTkHgvKUoKc8ygG8j5oXPcpoTUz5ZmXTTQuKrw/xSFFpXN3Nz6OrB3jlgYwT9gV/cMXLGzhihfAFly6pOGMwwzCtcR4YnatYsFjQoiz/ySg4qVTJjF5qCpKI95fHjCmdmRuR6QnrWeTeHKwG+TfJAhYvvZRv5l0H6wtBbRoEW724BjDa8vaTGjNCEQ62tbdcvYvo0+v+JYdP4uE13awjB5Uo18C8mRY/oeeUk4HMTxje71V9THLbNaRQ7SQmhdzcTaVoiWGYfcSQYqUl2j466DG7E/CinNqoXrvF2PqM+iQtO8yJvrj2tetkckH6tdZ2TDMLoe0x9GbXXy03Wjsi+Sg8tJbMbeUyCfl5VWpJ2imF49IkrVG/17ONd525elcjGtCC2DjKQEbXz0MtWX8JaCj3mo44GkAUFbCNHVZWksVTipQJXjl1Gp/Lf3feW64DW51omcpUhNAPWdj5wuZ7IHKYE/aE8jjWWCNtX0gtH0dmUUVWVbJxlbegBvEtbDt1ycGjOH7kMIEZ8B81U+f+Z7fZbuAsvHNZFKkodqAGV9/Mo+o7AYnilvYUf1wC09By3a6pF8coHLZO40Uf6b9w77fhYQ0kkk/mj+lKPi/253yRBDpVBmWq4PCsIZT/7TYJPVInezotRzE7j8aLY0XQ3RiMtT+9swvZ/ZaHU68/2uBa0JAxbHk3MDwx68hQTlL8mIdW2WpK3ntZ6nTRx+NkKNjbTmFx5Mw6Yv+cUp5WgWHV3r/guVumDscoCNw1cEiBE3p7LOabJvU6bZPQr+pvJVW5/RbSsha7QvF252VnYKN7bEAQyMi6KgdbBApUJESf7Tg1RTpU0AAAAAAAA=="
+                          alt=""
+                          data-pagespeed-url-hash="2710334252"
+                          onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                        />
+                        <h5>Vegetable’s Package</h5>
+                      </td>
+                      <td class="shoping__cart__price">$55.00</td>
+                      <td class="shoping__cart__quantity">
+                        <div class="quantity">
+                          <div class="pro-qty">
+                            <span class="dec qtybtn">-</span>
+                            <input type="text" value="1" />
+                            <span class="inc qtybtn">+</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shoping__cart__total">$110.00</td>
+                      <td class="shoping__cart__item__close">
+                        <span class="icon_close"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="shoping__cart__item">
+                        <img
+                          src="data:image/webp;base64,UklGRiYFAABXRUJQVlA4IBoFAABwGQCdASpkAGQAPm0ylEekIqIhJzop4IANiUAPIrNTx6v5uLBm/0PvQPM95w+mib0JkQLCO+Pw1+0MsJ8X7g8Ju83395ON7VAB9WuKrSmzP/Hv9W+wJ0mye2O0VYOAjJjuL2VWMbhI024mUhd4L3EPaNCmAi/AxEZrMdVjV3CIXTBeBKWPoFr85KOozHaZYHosnZ14PL/Y0Yx9biNHxgcuhAvZXEpt71FGIjzVn/X8iZ4dQYCKB/HhYUUsbUYLbUocYcY9b2RVxi9Selao95WpSJeGAAD+++chDDqo881S/LCC9eA/YPuDF45Kb9ZcPjbrl2+XaSgAKfGXixJdjBjQ+yrzW3lzPma9l9bpQFIfvUPGwASsA8psdKXcnw4LRYjZlT0fPIYGY3J+C+rx6Kka8QK0bWBvsa57MNmbfFpOq8LzmFyxTZC5uB1OFCoxBMS4nLoDDRUHbPDUUtc8B++Zlv5SrcXXX8Me5/Ho9hG5ll/rFEv/mSfp1N3frNSxuNrucYp52miZ0FgOepy2ZnWIOGTd3FYo/Q/swGIQv9nsSOQvPlbYO+xdFNxp7PhXfktXpZoSO9kJzc3A1UZas93DZQoJT3QplBAKwOTEM6mZYLy64M8V+pLmLPLyxH5lPj8s6golche93R/aq30YDbTbkW5L+x/p2EyPlxpMVevs8ir/Y5jWVfkQtNEjFrq9x2H8lLUY1rWp1L1HemeSrQU/ZUIXS6ln9xhpxDWa5TzFaxXHYu4uoXJzLfFWvUX1gne2N2LuQ8yewEt8y6s+1nK1D/HtyEuuPq08fQwOOwxek71RL2GMvkv0MQZxJ6JQeOIhesFlPK6r2YZYHw41a84wRPFVzj2S8U7tNGul3DNO6j56P1yNH+3iR4jBuX3SByR+NxmGKRWsSPHDaoH1id5sQ1RkaJ88N1EmhE4+ysM6R5M/tw5DC5Pyma6e33xB87GTVotunFs+ktZ60+kHmA3W5cnOSNxdwK7Km5+whg7t8ni9hFXSEsNLwhmWrYZmViWgnRZuRfjKEdZKxG08rS3SbIhs1l9rUkDvbVn8W3audZx4Qs5WDTu2RlBJJj0uIQF1CUBugdt71gPuq2eV9fTNwHdc8FVVOwvWOwRDkDk1RH0eFDDw48rDUBhDjLQrqRgk+jdJeRpTEL0L9ewufSThlcx3vQ0wgbLIFP/Yqcg4yXe38yMODV1x9vQV52zY6Vgkfsh0WqxUvLywBsf+J+MMu0zeOfAUat9dwgclXoeN24J386lU7Q7m45kEqHfXKRKFxaCvXJhMKaZW9IdM5LrRSzNcLPzk/BYDtQreEWMo3EJxyvSFEBeaAmpeZ0YM5DmkCrCKBfohX4vdEDcz7f2lxxDl8S1k1dRFG+tlssM0SDT77nygIlzshlPU1nYCV2OuCk58z/SYhfRL7RYimD6rZUzRtjMQaVW/sKOKFAQ9ExhYp13y9r0793eLHyzMzm8bbr7gRiANaM+u5n/r74YYGW5IXNER3lA8MOdGJ6Iq02rpbT00iBi/pDb60BHgssl5BeMEwMldebpr2oYW+dUbbF9+ObHBl3lecqOUFRoQdj9siOY0bq0Zb+FKI6Xvtp2SuMcGKXOsdQDrbrvm/HRbh3vCdQj6GeV6xDkPjn+FqqSDsfI3BeH188g3O2kU3RL85ya9wnealeDEvF8ZhcigCI4jaXLyvHSVY+cwiedQgWL44YzsjxYGR349Sn8bLREYT2AlhAAAAAAA"
+                          alt=""
+                          data-pagespeed-url-hash="3004834173"
+                          onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                        />
+                        <h5>Fresh Garden Vegetable</h5>
+                      </td>
+                      <td class="shoping__cart__price">$39.00</td>
+                      <td class="shoping__cart__quantity">
+                        <div class="quantity">
+                          <div class="pro-qty">
+                            <span class="dec qtybtn">-</span>
+                            <input type="text" value="1" />
+                            <span class="inc qtybtn">+</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shoping__cart__total">$39.99</td>
+                      <td class="shoping__cart__item__close">
+                        <span class="icon_close"></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="shoping__cart__item">
+                        <img
+                          src="data:image/webp;base64,UklGRtADAABXRUJQVlA4IMQDAABQFQCdASpkAGQAPm0ylkgkIqIhJpGp2IANiUAQvGm74bzaKh1oIsvbbOR8VPpqeY39p/V456rrhfQz6WH9u/SqQAfk1a7euYBTCFN/GE//s467W4vuv233tyKjaaN2iatHiWO9QagRNyrrT3R1a7qBDRVTKTb8GPWJ/v6zbu5/3/d6sqjcKVvOVCwmUa4mwrdh7274AV6ZRQ2LXRjsqQUa14tksrEyV8n8BJMJlnpiMfRYQAD+/PyApIaEcVTBrzjLU+O+QPmBERDMd4//ergAzy6eEuWac/6/G4m7Bn8zzBSb6HyNjy9cJknzBw9/fm26RH5rRkt/guxbawOppoWSCoWYb/3pPZD7Ff8+eKZafnbU+U26zrqWNBBwQFTh/iUOf6HRkt7nkleRGfC2a6zCRIjiqhPUq6I2444LsTJZW3MoOlNNjamdIINeTjANp2eYvsvJ4q/RlHiuVpX4lmqE1yns9PW1wbCzxq/OgBAXcRsdrXoN0MgIu+G5gXL9oF/b0BAOckZmb2vp7XMJugcYIdsXdG3Aa/YabWruh/4FPM+B+gpqw96J/ma5H4RmnwSLt8muMcpEeZ0UcVsPAzaixb4qW7l+CnN3MfYqwzQG9o5E5Dk8BNia2TxtYcfxERgg2u8z9bfGaTM+JMHrU9AablYnUTqZy0+FkVbEOll9kcWpcxtzuYZe3ECIOi3wj1Wjm288rNUSheKLqeoBSiNXKtG/fafo4YL9aZFPoUHv3hbQmpwtJlfyMoWsGWPsXWUA7t2jiX5JTC0PgzpVuq026+1vQcPjOB2G3CHYVRIUi8DWYIQUiwTzU9frcVNzgDR855UpFV2PQt0Js7AlLfg1u3MFXBMC14vMxc3On1KrwAdmzgqiKRrFvijHWG2Cip5OUlwaKFmFylZDc91dF5Jg5d1+vVv98SRqzMV83hqjBVQZExO799m+tSansgxI6jP+ivejilapJePqHCwQeGdf843sFwZlTQ4a25DVJPzuJsDy7i/TkojmM/9jAvqGYNxGS21VTdeVrGlz4O1Gf05A7bf6bl45svhpkVDjbtROCirtpmEbqH0bvvtlvCoXKp+mw+fOunDzSlyyd343embC6aI8Owx0HKdnxDq+XH4JLn+EHOAV6KP3+qZrq/H93ZN3NpkEi7kxR2XDlNjX/Uk2wud8C0fHkrs2Vz0AaathXde1ROviwqR1PQZQ1nGrjyWmVnyoXfJWrN8z08OHqXWUNAwaNn5fw/clEzfd+KIM7JVauEgoKeJgFz2wZgIAd74AAAAA"
+                          alt=""
+                          data-pagespeed-url-hash="3299334094"
+                          onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+                        />
+                        <h5>Organic Bananas</h5>
+                      </td>
+                      <td class="shoping__cart__price">$69.00</td>
+                      <td class="shoping__cart__quantity">
+                        <div class="quantity">
+                          <div class="pro-qty">
+                            <span class="dec qtybtn">-</span>
+                            <input type="text" value="1" />
+                            <span class="inc qtybtn">+</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="shoping__cart__total">$69.99</td>
+                      <td class="shoping__cart__item__close">
+                        <span class="icon_close"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="product--wrapper">
+            <div class="col-lg-12">
+              <div class="shoping__cart__btns">
+                <a href="#" class="primary-btn cart-btn">CONTINUE SHOPPING</a>
+                <a href="#" class="primary-btn cart-btn cart-btn-right"
+                  ><span class="icon_loading"></span> Upadate Cart</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="shoping__continue">
+                <div class="shoping__discount">
+                  <h5>Discount Codes</h5>
+                  <form action="#">
+                    <input type="text" placeholder="Enter your coupon code" />
+                    <button type="submit" class="site-btn">APPLY COUPON</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="shoping__checkout">
+                <h5>Cart Total</h5>
+                <ul>
+                  <li>Subtotal <span>$454.98</span></li>
+                  <li>Total <span>$454.98</span></li>
+                </ul>
+                <a href="#" class="primary-btn">PROCEED TO CHECKOUT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer--top-container">
+        <div class="footer--overlay"></div>
+        <div class="block block-about">
+          <ul>
+            <div class="footer_logo">
+              <img src="img/logo3_withText.png" alt="" />
+            </div>
+            <p>
+              <strong style="font-size: large">
+                Công Ty Cổ Phần Nông Nghiệp Ứng Dụng <br />
+                Công Nghệ Cao CLEAR ALGRICULTURE
+              </strong>
+              <br /><br />
+              Địa chỉ: Tầng 10, Tòa nhà Viwaseen – Số 48 Tố Hữu, <br />
+              P. Trung Văn, Q. Nam Từ Liêm, Hà Nội, Việt Nam
+            </p>
+            <br />
+          </ul>
+          <div class="footer-icon">
+            <div class="icon icon-facebook">
+              <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="icon icon-insta">
+              <i class="fab fa-instagram-square"></i>
+            </div>
+            <div class="icon icon-twitter">
+              <i class="fab fa-twitter-square"></i>
+            </div>
+            <div class="icon icon-youtube">
+              <i class="fab fa-youtube-square"></i>
+            </div>
+          </div>
+        </div>
+        <div class="block block-content">
+          <ul>
+            <li>
+              <a href=""><span>CHỨNG CHỈ</span></a>
+            </li>
+            <li><a href="">VietGap</a></li>
+            <li><a href="">ISO</a></li>
+            <li><a href="">FSC</a></li>
+            <li><a href="">USDA</a></li>
+          </ul>
+        </div>
+        <div class="block block-Brands">
+          <ul>
+            <li>
+              <a href=""><span>GIỚI THIỆU</span></a>
+            </li>
+            <li><a href="">Dự án</a></li>
+            <li><a href="">Lĩnh vực</a></li>
+            <li><a href="">Công Nghệ</a></li>
+            <li><a href="">Đối tác</a></li>
+            <li><a href="">Truyền thông</a></li>
+            <li><a href="">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="block block-Career">
+          <a href=""><span>TƯ VẤN</span></a>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Họ và Tên" />
+          </div>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Điện thoại" />
+          </div>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="input inpute--career">
+            <input type="text" placeholder="Nội dung" />
+          </div>
+          <div class="button button--send-red">
+            <button>GỬI</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer--line"></div>
+      <div class="footer--bottom-container">
+        <div class="footer--title-copyright">
+          <h3>© 2017 Clear Algriculture Company. All rights reserved.</h3>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
