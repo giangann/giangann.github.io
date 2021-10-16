@@ -557,6 +557,9 @@ a {
 
 
 @media only screen and (max-width: 800px){
+  .main--container-fifthBanner{
+    margin-bottom: 80px !important;
+  }
   .overlay-grey{
     width: 20%;
     margin-left: 80% ;
@@ -605,7 +608,7 @@ a {
   }
 
   footer{
-    height: 800px;
+    height: fit-content;
   }
 
   h1{
@@ -634,5 +637,27 @@ a {
 @media only screen and (max-width: 500px){
   .header--icon{
     width: 25%;
+  }
+  .footer_logo img{
+    max-width: 50%;
+    margin-top: auto;
+  }
+  .block{
+    flex: 0 0 100%;
+
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .block-about{
+    height: fit-content;
+  }
+  .block li:not(:first-child){
+    display: inline;
+  }
+  .footer--top-container{
+    height: fit-content;
+  }
+  .footer--line{
+    margin-top: 20px;
   }
 }
