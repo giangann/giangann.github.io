@@ -197,6 +197,10 @@
 
 /* RIGTH SIDE */
 
+    /* -------------------- */
+            /* Define icon */
+
+    /* ---------------------- */
 .product__detail-rightWrapper {
   max-width: 50%;
   flex: 0 0 50%;
@@ -256,21 +260,11 @@
 }
 
 .product__details__text .heart-icon {
-  display: inline-block;
-  font-size: 16px;
-  color: #6f6f6f;
-  padding: 13px 16px 13px;
-  background: #f5f5f5;
-  background-image: initial;
-  background-position-x: initial;
-  background-position-y: initial;
-  background-size: initial;
-  -webkit-background-repeat-x: initial;
-  -webkit-background-repeat-y: initial;
-  background-attachment: initial;
-  background-origin: initial;
-  background-clip: initial;
-  background-color: rgb(245, 245, 245);
+    display: inline-block;
+	font-size: 16px;
+	color: #6f6f6f;
+	padding: 13px 16px 13px;
+	background: #f5f5f5;
 }
 
 .product__details__text ul {
@@ -350,6 +344,7 @@
   flex: 0 0 100%;
   position: relative;
   width: 100%;
+  max-width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -361,6 +356,7 @@
   border-bottom: none;
   justify-content: center;
   position: relative;
+  display: flex;
 }
 
 .product__details__tab .nav-tabs:before {
@@ -416,4 +412,12 @@
   color: #666666;
 }
 
+.tab_title{
+    font-size: 18px !important;
+}
+.tab_text{
+    line-height: 26px;
+    margin-bottom: 15px;
+}
 
+/* UNDER - BOTTOM SIDE (RELATED PRODUCTS)*/
