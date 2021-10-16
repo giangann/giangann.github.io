@@ -120,7 +120,7 @@ header {
 }
 
 .menu-wrapper{
-  width: 80%;
+  max-width: 1170px;
   height: 100vh;
   background-color: rgb(227 52 19 / 93%);
 }
@@ -390,6 +390,9 @@ footer {
   justify-content: space-between;
   margin: auto;
   color: white;
+}
+.footer_logo img{
+  margin-top: -20%;
 }
 
 .block {
